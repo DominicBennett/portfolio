@@ -32,10 +32,10 @@ html {
 
   body {
     width: 60rem;
-    flex-direction: row;
+    /*flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    flex-wrap: wrap;*/
+    /*text-align: center;*/
     /*margin: 0 2rem;*/
   }
 
