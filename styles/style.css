@@ -1,65 +1,65 @@
-/*These first few rules I've taken from the webpage at https://www.digitalocean.com/community/tutorials/css-minimal-css-reset to reset the css */
-
-html {
+    /*These first few rules I've taken from the webpage at https://www.digitalocean.com/community/tutorials/css-minimal-css-reset to reset the css */
+    
+    html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  *, *:before, *:after {
+    }
+    
+    *, *:before, *:after {
     box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    }
+    
+    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
-  
-  ol, ul {
+    }
+    
+
+    ol, ul {
     list-style: none;
-  }
-  
-  img {
-    max-width: 33.33%;
-    height: auto;
-  }
-
-  .content {
-    max-width: 31.25rem;
-    margin: auto;
-  }
-
-  body {
-    width: 60rem;
-    /*flex-direction: row;
-    display: flex;
-    flex-wrap: wrap;*/
+    }
+    
+    
+    header {
+    background-color: #e0f0f0;
     /*text-align: center;*/
-    /*margin: 0 2rem;*/
-  }
-
-  nav li {
-    display: inline-block;
-    margin: 2rem;
-  }
-
-  header, nav, section {
-    margin-bottom: 2rem;
-  }
-
-.intro p {
-  text-align: justify;
-}
-
-  /*p {
-    text-align: left;
-  }*/
-
- /* #container {
+    padding: 20px;
+    }
+    
+    /*.content {
+    max-width: 100%;
+    text-align: center;
+    }*/
+    
+    .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }*/
-
+    align-items: center;
+    max-width: 100%;
+    }
+    
+    nav li {
+    display: inline;
+    }
+    
+    #project_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    }
+    
+    .image {
+    max-width: 33.33%;
+    max-height:auto;
+    object-fit: cover;
+    border: 1px black solid;
+    
+    }
+    
+    
+    
+    
+    
