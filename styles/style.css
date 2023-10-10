@@ -21,17 +21,20 @@
     list-style: none;
     }
     
-    
     header {
     background-color: #e0f0f0;
-    /*text-align: center;*/
     padding: 20px;
+    }
+
+    h1 {
+        background-color: transparent;
     }
     
     /*.content {
     max-width: 100%;
     text-align: center;
     }*/
+
     
     .container {
     display: flex;
@@ -40,6 +43,8 @@
     align-items: center;
     max-width: 100%;
     }
+
+   
     
     nav li {
     display: inline;
