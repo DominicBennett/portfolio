@@ -45,20 +45,31 @@
     display: inline;
     }
     
+#about p {
+    margin: 0 0.5rem;
+    text-align: center;
+}
+
     #project_cards {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: center;
     }
     
     .image {
-    max-width: 33.33%;
+    max-width: 25%;
     max-height:auto;
     object-fit: cover;
     border: 1px black solid;
+    margin: 0.5rem;
     
     }
     
+    .container h2 {
+        background-color: blueviolet;
+        padding: 0.5rem 0;
+    }
     
     
     
