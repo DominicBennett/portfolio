@@ -24,6 +24,8 @@
     header {
     background-color: #e0f0f0;
     padding: 20px;
+    position: sticky;
+    top: 0;
     }
 
     h1 {
@@ -74,6 +76,24 @@
     .container h2 {
         background-color: blueviolet;
         padding: 0.5rem 0;
+    }
+
+    footer {
+        position: sticky;
+        background-color:lightgray;
+        text-emphasis-color: ;
+        text-align: center;
+        font-weight: bold;
+        /*position: fixed;*/
+        bottom: 0;
+        width: 100%;
+        margin-top: 1rem;
+        min-height: 2rem;
+    }
+
+    footer p {
+        position: relative;
+        top: 0.5rem;
     }
     
     
