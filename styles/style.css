@@ -32,12 +32,6 @@
         background-color: transparent;
     }
     
-    /*.content {
-    max-width: 100%;
-    text-align: center;
-    }*/
-
-    
     .container {
     display: flex;
     flex-direction: column;
@@ -46,16 +40,14 @@
     max-width: 100%;
     }
 
-   
-    
     nav li {
     display: inline;
     }
     
-#about p {
-    margin: 0 0.5rem;
-    text-align: center;
-}
+    #about p {
+        margin: 0 0.5rem;
+        text-align: center;
+    }
 
     #project_cards {
     display: flex;
