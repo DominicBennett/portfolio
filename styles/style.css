@@ -62,7 +62,10 @@
     object-fit: cover;
     border: 1px black solid;
     margin: 0.5rem;
-    
+    }
+
+    #project_cards .image:hover {
+        opacity: 0.5;
     }
     
     .container h2 {
@@ -73,7 +76,7 @@
     footer {
         position: sticky;
         background-color:lightgray;
-        text-emphasis-color: ;
+        text-emphasis-color: black;
         text-align: center;
         font-weight: bold;
         /*position: fixed;*/
