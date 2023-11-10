@@ -17,21 +17,27 @@
     background-color: white;
     }
 
-    
-    
-
     ol, ul {
     list-style: none;
     }
     
     header {
-    background-color: #e0f0f0;
+    background-color: gray;
     padding: 20px;
     position: sticky;
     top: 0;
+    z-index: 1;
     }
 
-    h1 p {
+    header h1, header p {
+        background-color: transparent;
+    }
+
+    header nav ul {
+        background-color: transparent;
+    }
+
+    header nav li {
         background-color: transparent;
     }
     
@@ -41,6 +47,7 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 100%;
+    scroll-margin-top: 5.5rem;
     }
 
     nav li {
@@ -72,13 +79,13 @@
     }
     
     .container h2 {
-        background-color: blueviolet;
+        /*background-color: transparent;*/
         padding: 0.5rem 0;
     }
 
     footer {
-        position: sticky;
-        background-color:lightgray;
+        /*position: sticky;*/
+        /*background-color:lightgray;*/
         text-emphasis-color: black;
         text-align: center;
         font-weight: bold;
@@ -91,6 +98,7 @@
 
     footer p {
         position: relative;
+        background-color: transparent;
         top: 0.5rem;
     }
     
