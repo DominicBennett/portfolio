@@ -20,9 +20,18 @@
     ol, ul {
     list-style: none;
     }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        font-weight: bold;
+    }
     
     header {
-    background-color: gray;
+    background-color: #e6efee;
     padding: 20px;
     position: sticky;
     top: 0;
@@ -66,16 +75,23 @@
     justify-content: center;
     }
     
-    .image {
+    /*.image {
     max-width: 25%;
     max-height:auto;
     object-fit: cover;
     border: 1px black solid;
     margin: 0.5rem;
-    }
+    }*/
 
     #project_cards .image:hover {
         opacity: 0.5;
+    }
+    
+    #project_cards img {
+        width: 25rem;
+        margin: 0.5rem;
+        border-radius: 3%;
+        border: black solid 1px;
     }
     
     .container h2 {
