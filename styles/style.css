@@ -1,25 +1,31 @@
+    
     /*These first few rules I've taken from the webpage at https://www.digitalocean.com/community/tutorials/css-minimal-css-reset to reset the css */
     
     html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(15px + 0.390625vw);
     }
+    
     
     *, *:before, *:after {
     box-sizing: inherit;
     }
     
-    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    body /*h1, h2, h3, h4, h5, h6, p, ol, ul*/ {
     margin: 0;
     padding: 0;
     font-weight: normal;
     background-color: white;
+    font-family: "Inconsolata", monospace;
+    /*font-size: 1.2rem;*/
     }
 
-    body {
-        font-size: 1.4rem;
+    h1, h2 {
+        font-family: "Crimson Text", serif;
     }
+
 
     ol, ul {
     list-style: none;
@@ -121,7 +127,29 @@
         background-color: transparent;
         top: 0.5rem;
     }
+
+    /*@media only screen and (max-width: 480px) {
+        body {
+            font-size: 2rem;
+        }
+    }
     
     
+        
+    
+    
+        @media only screen and (max-width: 480px) {
+            body {
+                font-size: 2rem;
+            }
+            body{
+                font-family: "Inconsolata", monospace;
+                font-size: 2rem; /* Add this line to specifically target the font size of Inconsolata
+            }
+        */
+        
+        
+        
+        
     
     
