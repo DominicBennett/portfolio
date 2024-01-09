@@ -42,7 +42,7 @@
     
     header {
     background-color: #e6efee;
-    padding: 20px;
+    padding: 5px;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -66,8 +66,12 @@
     flex-wrap: wrap;
     align-items: center;
     max-width: 100%;
-    scroll-margin-top: 5.5rem;
+    scrol-margin-top: 5.5rem;
     }
+
+#about, #assignments {
+    scroll-margin-top: 8rem;
+}
 
     nav li {
     display: inline;
@@ -99,6 +103,8 @@
     
     #project_cards img {
         width: 25rem;
+        height: 12.5rem;
+        object-fit: cover;
         margin: 0.5rem;
         border-radius: 3%;
         border: black solid 1px;
@@ -107,6 +113,10 @@
     .container h2 {
         /*background-color: transparent;*/
         padding: 0.5rem 0;
+    }
+
+    #contact_details h2 {
+        text-align: center;
     }
 
     footer {
@@ -137,6 +147,6 @@
             width: 15rem; /* Adjust the image size for smaller screens */
         }
         
-    }
+    }z
 
     
