@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("Hey there Dominic, page has loaded!");
+}
+)
+
 //debug function to get image names and log to console
 function logImages() {
     const images = document.getElementsByClassName("image");
@@ -15,6 +20,9 @@ var h2 = document.querySelector('h2');
 var pFooter =document.querySelector('.footer p');
 var theme ='day';
 
+//sessionStorage.setItem("currentTheme", "");
+
+
 function changeTheme() {
     if (theme === 'day') {
         //set theme to night
@@ -27,10 +35,14 @@ function changeTheme() {
             h2All[i].style.backgroundColor = 'black';
             h2All[i].style.color = 'white';
         };
-        //pFooter.style.backgroundColor = 'transparent';
 
-        theme = 'night';
-    } else {
+        sessionStorage.setItem("currentTheme", "night");
+        theme = sessionStorage.getItem("currentTheme");
+        console.log('Theme set to ' + theme);
+        return;
+
+    } 
+    if (theme === 'night') {
         //set theme to day
         body.style.backgroundColor = 'white';
         for (var i = 0; i < paragraphs.length; i++) {
@@ -41,7 +53,10 @@ function changeTheme() {
             h2All[i].style.backgroundColor = 'white';
             h2All[i].style.color = 'black';
         };
-        theme = 'day';
+        sessionStorage.setItem("currentTheme", "day");
+        theme = sessionStorage.getItem("currentTheme");
+        console.log('Theme set to ' + theme);
+        return;
     }
 }
 
@@ -50,6 +65,12 @@ var paragraphs = document.querySelectorAll('p');
 var h2All = document.querySelectorAll('h2');
 
 themeButton.addEventListener('click', changeTheme);
+
+if (sessionStorage.getItem('currentTheme') === null) {
+    sessionStorage.setItem('currentTheme', theme);
+};
+
+console.log('current theme ' + sessionStorage.getItem('currentTheme'));
 
 
 
